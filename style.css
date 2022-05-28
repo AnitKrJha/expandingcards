@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    gap: 1em;
+    width: 95%;
+    margin: auto;
+    padding: auto;
+}
+
+
+
+.block.active {
+    flex-shrink: 1;
+}
+
+
+h3 {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    opacity: 0;
+    color: white;
+    pointer-events: none;
+
+    position: absolute;
+    top: 10px;
+}
+
+.active h3 {
+    transition: 0.5s ease-in;
+    display: inline;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.block {
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 1em;
+    align-items: flex-end;
+    display: flex;
+    transition: 1s ease-in-out;
+    border-radius: 3em;
+    background-position: center;
+    background-size: cover;
+    background-color: red;
+    flex-basis: 60em;
+    height: 70vh;
+    flex-shrink: 6;
+}
